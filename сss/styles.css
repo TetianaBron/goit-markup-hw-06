@@ -225,9 +225,10 @@ h2 {
   line-height: 1.8;
   font-weight: 700;
   cursor: pointer;
+  border: var(--accent-color);
 }
 
-button {
+.button-filters {
   border: none;
   padding: 6px 23px;
   background-color: var(--accent-grey);
@@ -635,6 +636,7 @@ button:focus {
   justify-content: center;
 
   color: var(--primary-white-color);
+  border: var(--accent-color);
   background: var(--accent-color);
   letter-spacing: 0.06em;
   font-weight: bold;

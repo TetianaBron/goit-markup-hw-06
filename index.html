@@ -56,7 +56,7 @@
       <section class="hero">
             <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
          <div class="button-order-center">
-           <a href="#" class="button-order">Заказать услугу</a>
+           <button class="button-order" data-modal-open>Заказать услугу</button>
           </div>
       </section>
 
@@ -403,12 +403,13 @@
       </div>
     </footer>
 
-<div class="backdrop is-hidden">
+<div class="backdrop is-hidden" data-modal>
 <div class="modal">
   <p class="left-data">Оставьте свои данные, мы вам перезвоним</p>
-  <button class="button-sent">Отправить</button>
+  <button class="button-sent" data-modal-close>Отправить</button>
 </div>
 </div>
 
+<script src="./js/modal.js"></script>
   </body>
 </html>
