@@ -112,7 +112,6 @@ h2 {
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-color);
-  outline: none;
 }
 
 .address .item + .item {
@@ -151,17 +150,18 @@ h2 {
 .nav-link:focus,
 .current {
   color: var(--accent-color);
-  outline: none;
 }
 
 .current::after {
-  display: block;
   position: absolute;
+
+  height: 4px;
+  width: 100%;
+
   left: 0;
   bottom: 0;
+  display: block;
   content: "";
-  width: 100%;
-  height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
 
@@ -176,7 +176,6 @@ h2 {
 
 .icon-header:hover {
   fill: var(--accent-color);
-  outline: none;
 }
 
 /* Hero */
@@ -196,6 +195,7 @@ h2 {
 }
 
 .hero-title {
+  display: block;
   margin-bottom: 30px;
   color: var(--primary-white-color);
   text-transform: uppercase;
@@ -206,27 +206,29 @@ h2 {
   font-weight: 900;
 }
 
+.button-order-center {
+  text-align: center;
+}
+
 /* buttons */
 
 .button-order {
-  margin-left: 700px;
-  margin-right: 700px;
   display: inline-block;
+  min-width: 200px;
+  min-height: 50px;
   border-radius: 4px;
   padding: 10px 32px;
-  min-width: 200px;
-
+  text-align: center;
   color: var(--primary-white-color);
   background: var(--accent-color);
-  text-align: center;
   font-size: 16px;
   line-height: 1.8;
   font-weight: 700;
+  cursor: pointer;
 }
 
 button {
   border: none;
-  outline: none;
   padding: 6px 23px;
   background-color: var(--accent-grey);
   font-family: inherit;
@@ -239,7 +241,7 @@ button {
 
 button:hover,
 button:focus {
-  outline: none;
+  cursor: pointer;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -316,6 +318,7 @@ button:focus {
 .what-we-do .title {
   position: absolute;
   width: 370px;
+
   bottom: 0;
   right: 0;
   padding-top: 27px;
@@ -647,4 +650,61 @@ button:focus {
   padding-left: 94px;
   color: var(--primary-white-color);
   text-transform: uppercase;
+}
+
+/* Модальное окно*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(116, 113, 109, 0.801);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  min-height: 581px;
+  min-width: 528px;
+
+  background-color: var(--primary-white-color);
+
+  transform: translate(-50%, -50%);
+}
+
+.left-data {
+  padding-left: 40px;
+  padding: 40px 40px 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--title-text-color);
+  line-height: 1.15;
+}
+
+.button-sent {
+  margin-left: 164px;
+  margin-right: 164px;
+  margin-bottom: 40px;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  cursor: pointer;
 }
