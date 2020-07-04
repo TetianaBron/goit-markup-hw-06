@@ -356,7 +356,7 @@
           </address>
         </div>
     
-        <div>
+        <div class="join-conteiner">
           <b class="join">Присоединяйтесь</b>
           <ul class="social-network-list-footer">
             <li class="item">
@@ -389,18 +389,30 @@
             </li>
           </ul>
         </div>
+
+<div class="subscribe-conteiner">
+      <b class="subscribe">Подпишитесь на рассылку</b>
+    <form>
+      <label for="user-mails">
     
-        <div>
-          <b class="subscribe">Подпишитесь на рассылку</b>
-        </div>
+<input 
+type="email" 
+name="user-mails"
+id="user-mails"
+ placeholder="E-mail"
+ autofocus/>
+      </label>
+    <button class="button-subscribe">Подписаться
+      <span><svg class="icon-send" width="24px" height="24px">
+          <use href="./Images/sprite.svg#icon-icon_send"></use>
+        </svg>
+      </span>
+    </button>
     
-        <button class="button-subscribe">Подписаться
-          <span><svg class="icon-send" width="24px" height="24px">
-              <use href="./Images/sprite.svg#icon-icon_send"></use>
-            </svg>
-          </span>
-        </button>
-      </div>
+      </form>
+</div>
+       
+
     </footer>
 
 <div class="backdrop is-hidden" data-modal>

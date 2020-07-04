@@ -225,7 +225,6 @@ h2 {
   line-height: 1.8;
   font-weight: 700;
   cursor: pointer;
-  border: var(--accent-color);
 }
 
 .button-filters {
@@ -561,7 +560,6 @@ button:focus {
 
 .address-phone-join {
   display: flex;
-  align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -586,7 +584,7 @@ button:focus {
 
 .social-network-list-footer {
   display: flex;
-  padding-left: 69px;
+  padding-left: 0px;
   justify-content: center;
   align-items: center;
   margin-top: 32px;
@@ -618,10 +616,25 @@ button:focus {
   color: var(--primary-white-color);
 }
 
+.join-conteiner {
+  padding-top: 12px;
+  margin-left: 69px;
+}
+
 .join {
-  padding-left: 69px;
+  /*
+  padding-left: 69px;*/
   color: var(--primary-white-color);
   text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+
+.subscribe-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  margin-left: 94px;
 }
 
 .button-subscribe {
@@ -632,8 +645,8 @@ button:focus {
   padding-left: 29px;
   padding-right: 28px;
   margin-left: auto;
-  align-self: center;
-  justify-content: center;
+  /*align-self: center;
+  justify-content: center;*/
 
   color: var(--primary-white-color);
   border: var(--accent-color);
@@ -649,9 +662,10 @@ button:focus {
 }
 
 .subscribe {
-  padding-left: 94px;
   color: var(--primary-white-color);
   text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.03em;
 }
 
 /* Модальное окно*/
