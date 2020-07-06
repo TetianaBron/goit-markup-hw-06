@@ -425,29 +425,37 @@ id="user-mails"
       <div class="form-field">
         <input type="text" class="form-input" name="name" id="name" placeholder=" " />
         <label for="name" class="form-label">Имя</label>
-        <span class="icon"></span>
+          <svg class="icon" width="12px" height="12px">
+            <use href="./images/sprite.svg#icon-name_form"></use> 
+          </svg>
       </div>
     
       <div class="form-field">
         <input type="tel" class="form-input" name="telephone" id="telephone" placeholder=" " />
         <label for="telephone" class="form-label">Телефон</label>
-        <span class="icon"></span>
+          <svg class="icon" width="13px" height="13px">
+            <use href="./images/sprite.svg#icon-phome_form"></use> 
+          </svg>
       </div>
 
       <div class="form-field">
         <input type="email" class="form-input" name="mail" id="mail" placeholder=" " />
         <label for="mail" class="form-label">Почта</label>
-        <span class="icon"></span>
+          <svg class="icon" width="15px" height="12px">
+            <use href="./images/sprite.svg#icon-mail_form"></use> 
+          </svg>
       </div>
 
       <div>
       <textarea name="comment" id="comment"></textarea>
-        <label for="comment" class="form-label">Комментарий</label>
+        <label for="comment" class="form-label-comment">Комментарий</label>
       </div>
 
       <p class="agree">Соглашаюсь с рассылкой и принимаю <a href=""><span class="conditions">Условия договора</span></a></p>
 
+      <div class="button-centered">
   <button class="button-sent" data-modal-close>Отправить</button>
+</div>
   </form>
 </div>
 </div>

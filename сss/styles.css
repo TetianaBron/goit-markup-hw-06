@@ -742,6 +742,15 @@ button:focus {
   transition: transform 250ms var(--timing-function);
 }
 
+.form-label-comment {
+  position: absolute;
+  top: 51%;
+  left: 60px;
+  transform: translateY(-50%);
+
+  transition: transform 250ms var(--timing-function);
+}
+
 .form-input {
   width: 100%;
   margin: 0;
@@ -753,31 +762,31 @@ button:focus {
 }
 
 .form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label {
+.form-input:not(:placeholder-shown) + .form-label,
+textarea:focus + .form-label-comment {
   color: var(--accent-color);
   transform: translateY(-40px);
 }
 
 .form-input:focus,
 textarea:focus {
-  outline: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
+  outline: none;
 }
 
 .icon {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 19px;
 
   transform: translateY(-50%);
 
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: tomato;
+  fill: var(--title-text-color);
 }
 
 .form-input:focus ~ .icon {
-  background-color: blue;
+  fill: var(--accent-color);
 }
 
 textarea {
@@ -802,6 +811,11 @@ textarea {
 .conditions {
   color: var(--accent-color);
   text-decoration: underline;
+}
+
+.button-centered {
+  display: flex;
+  justify-content: center;
 }
 
 .button-sent {
