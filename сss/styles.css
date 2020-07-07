@@ -709,10 +709,14 @@ button:focus {
 
   min-height: 581px;
   min-width: 528px;
-
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
   background-color: var(--primary-white-color);
 
-  transform: translate(-50%, -50%);
+  /*transform: translate(-50%, -50%);
+  transition: 250ms all var(--timing-function);
+  opacity: 1;*/
 }
 
 .left-data {
@@ -737,7 +741,7 @@ button:focus {
   position: absolute;
   top: 50%;
   left: 40px;
-  transform: translateY(-50%);
+  transform: translate(0, -50%);
 
   transition: transform 250ms var(--timing-function);
 }
@@ -746,7 +750,7 @@ button:focus {
   position: absolute;
   top: 51%;
   left: 60px;
-  transform: translateY(-50%);
+  transform: translate(0, -50%);
 
   transition: transform 250ms var(--timing-function);
 }
@@ -762,10 +766,15 @@ button:focus {
 }
 
 .form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label,
-textarea:focus + .form-label-comment {
+.form-input:not(:placeholder-shown) + .form-label {
   color: var(--accent-color);
-  transform: translateY(-40px);
+  transform: translate(-25px, -40px);
+}
+
+textarea:focus + .form-label-comment,
+textarea:not(:placeholder-shown) + .form-label-comment {
+  color: var(--accent-color);
+  transform: translate(-10px, -40px);
 }
 
 .form-input:focus,
@@ -783,6 +792,23 @@ textarea:focus {
 
   display: inline-block;
   fill: var(--title-text-color);
+}
+
+.button-close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: var(--primary-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  top: 8px;
+  right: 8px;
+  border-radius: 50px;
+  fill: #000000;
+}
+
+.button-close:hover {
+  fill: var(--accent-color);
+  background: var(--primary-white-color);
 }
 
 .form-input:focus ~ .icon {
@@ -803,7 +829,7 @@ textarea {
 
 .agree {
   line-height: 1.71;
-  padding: 0px 0px 0px 36px;
+  padding: 0px 0px 0px 12px;
   margin-top: 0px;
   margin-bottom: 30px;
 }

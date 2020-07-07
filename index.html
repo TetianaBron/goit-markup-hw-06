@@ -419,6 +419,12 @@ id="user-mails"
 
 <div class="backdrop is-hidden" data-modal>
 <div class="modal">
+  <div>
+    <button data-modal-close class="button-close">
+    <svg class="icon-close" width="11px" height="11px">
+      <use href="./images/sprite.svg#icon-close_form"></use>
+    </svg></button>
+  </div>
   <p class="left-data">Оставьте свои данные, мы вам перезвоним</p>
 
     <form class="form" autocomplete="off">
@@ -447,15 +453,19 @@ id="user-mails"
       </div>
 
       <div>
-      <textarea name="comment" id="comment"></textarea>
+      <textarea name="comment" id="comment" placeholder=" "></textarea>
         <label for="comment" class="form-label-comment">Комментарий</label>
       </div>
 
-      <p class="agree">Соглашаюсь с рассылкой и принимаю <a href=""><span class="conditions">Условия договора</span></a></p>
+      <div class="agree">
+<input type="checkbox">
+       Соглашаюсь с рассылкой и принимаю <a href=""><span class="conditions">Условия договора</span></a>
+</div>
 
       <div class="button-centered">
   <button class="button-sent" data-modal-close>Отправить</button>
 </div>
+
   </form>
 </div>
 </div>
