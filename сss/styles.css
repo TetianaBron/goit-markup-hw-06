@@ -781,7 +781,7 @@ button:focus {
 textarea:focus + .form-label-comment,
 textarea:not(:placeholder-shown) + .form-label-comment {
   color: var(--accent-color);
-  transform: translate(0px, -40px);
+  transform: translate(0px, -35px);
 }
 
 .form-input:focus,
